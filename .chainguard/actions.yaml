@@ -1,3 +1,7 @@
-# Scenario A: baseline, upgrades not opted in.
+# Step 1: upgrades on, defaults; setup-node excluded through migrate.ignore.
 migrate:
   enabled: true
+  ignore:
+    actions: ["chainguard-actions/actions-setup-node"]
+  upgrade:
+    enabled: true
