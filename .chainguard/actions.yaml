@@ -1,10 +1,7 @@
-# Step 9: a mistake while the only possible changes are upgrades.
+# Step 10a: step 1 settings again.
 migrate:
   enabled: true
   ignore:
-    files: ["upstream.yaml"]
     actions: ["chainguard-actions/actions-setup-node"]
   upgrade:
     enabled: true
-    cooldown:
-      semver-major-days: 3
