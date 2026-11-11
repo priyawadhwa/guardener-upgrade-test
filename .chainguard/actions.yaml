@@ -1,8 +1,9 @@
-# Step 6: the upstream workflow is ignored, so the PR only upgrades.
+# Mistake step: semver-major-days: 3
 migrate:
   enabled: true
   ignore:
-    files: ["upstream.yaml"]
     actions: ["chainguard-actions/actions-setup-node"]
   upgrade:
     enabled: true
+    cooldown:
+      semver-major-days: 3
