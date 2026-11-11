@@ -1,4 +1,4 @@
-# Cooldown step: default-days 0.
+# Cooldown step: default-days 7.
 migrate:
   enabled: true
   ignore:
@@ -6,4 +6,4 @@ migrate:
   upgrade:
     enabled: true
     cooldown:
-      default-days: 0
+      default-days: 7
