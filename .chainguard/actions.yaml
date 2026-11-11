@@ -1,4 +1,4 @@
-# Step 10a: step 1 settings again.
+# Step 10b: step 1 settings, with .github/workflows/actions.lock present.
 migrate:
   enabled: true
   ignore:
