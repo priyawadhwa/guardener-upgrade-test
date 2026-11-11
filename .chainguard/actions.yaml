@@ -1,9 +1,10 @@
-# Cooldown step: default-days 7.
+# Step 5: the common Dependabot rule that turns off major updates.
 migrate:
   enabled: true
   ignore:
     actions: ["chainguard-actions/actions-setup-node"]
   upgrade:
     enabled: true
-    cooldown:
-      default-days: 7
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
