@@ -1,7 +1,9 @@
-# Step 2: same settings as step 1, re-triggered.
+# Cooldown step: default-days 0.
 migrate:
   enabled: true
   ignore:
     actions: ["chainguard-actions/actions-setup-node"]
   upgrade:
     enabled: true
+    cooldown:
+      default-days: 0
