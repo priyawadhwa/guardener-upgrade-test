@@ -1,4 +1,4 @@
-# Step 1: upgrades on, defaults; setup-node excluded through migrate.ignore.
+# Step 2: same settings as step 1, re-triggered.
 migrate:
   enabled: true
   ignore:
