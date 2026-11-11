@@ -14,15 +14,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: sha-release-pin
-        uses: chainguard-actions/actions-checkout@77548e6996d4fe6357c1ac4b2e72cba4c9511aa9 # v4.2.2
+        uses: chainguard-actions/actions-checkout@37298d8de412b35988dd165ffae45f45b329d365 # v7.0.1
       - name: tag-release-pin
-        uses: chainguard-actions/actions-setup-go@v5.0.0
+        uses: chainguard-actions/actions-setup-go@v7.0.0
         with:
           go-version: "1.23"
       - name: tag-floating-pin
-        uses: chainguard-actions/actions-checkout@v4
+        uses: chainguard-actions/actions-checkout@v6
       - name: sha-floating-pin
-        uses: chainguard-actions/actions-checkout@59b7218bfc2eaabc464f1254f6e1dac5bda91d94 # v4
+        uses: chainguard-actions/actions-checkout@40e53bf063d4f87f0a6e0a83231c09bcfb22bc19 # v6
       - name: migrate-ignore-actions-target
         uses: chainguard-actions/actions-setup-node@v5.0.0
 
@@ -31,6 +31,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: cooldown-probe
-        uses: chainguard-actions/anthropics-claude-code-action@27cc1794ce30aadb6f9937337d8f89d637f5d7d0 # v1.0.261
+        uses: chainguard-actions/anthropics-claude-code-action@6208f1b61aac812480595c77b7190d58521e8e8d # v1.0.269
       - name: branch-ref-left-alone
         uses: chainguard-actions/actions-checkout@main
