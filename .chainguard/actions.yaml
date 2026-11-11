@@ -1,7 +1,10 @@
-# Step 1 settings.
+# An ignore rule skips every remaining change; the PR carries the skip label.
 migrate:
   enabled: true
   ignore:
+    files: ["upstream.yaml"]
     actions: ["chainguard-actions/actions-setup-node"]
   upgrade:
     enabled: true
+    ignore:
+      - dependency-name: "*"
