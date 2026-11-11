@@ -1,4 +1,4 @@
-# Mistake step: semver-major-days: 3
+# Mistake step: default-days: 0.5
 migrate:
   enabled: true
   ignore:
@@ -6,4 +6,4 @@ migrate:
   upgrade:
     enabled: true
     cooldown:
-      semver-major-days: 3
+      default-days: 0.5
