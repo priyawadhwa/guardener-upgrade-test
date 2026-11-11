@@ -1,7 +1,10 @@
-# Step 1 settings, left in place so the daily resync can be checked.
+# Retest after mono#83413: an ignore rule now skips every remaining change.
 migrate:
   enabled: true
   ignore:
+    files: ["upstream.yaml"]
     actions: ["chainguard-actions/actions-setup-node"]
   upgrade:
     enabled: true
+    ignore:
+      - dependency-name: "*"
