@@ -1,10 +1,8 @@
-# Step 5: the common Dependabot rule that turns off major updates.
+# Step 6: the upstream workflow is ignored, so the PR only upgrades.
 migrate:
   enabled: true
   ignore:
+    files: ["upstream.yaml"]
     actions: ["chainguard-actions/actions-setup-node"]
   upgrade:
     enabled: true
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
