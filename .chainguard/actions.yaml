@@ -1,4 +1,4 @@
-# Step 10b: step 1 settings, with .github/workflows/actions.lock present.
+# Step 1 settings, left in place so the daily resync can be checked.
 migrate:
   enabled: true
   ignore:
