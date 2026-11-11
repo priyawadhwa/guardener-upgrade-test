@@ -1,7 +1,10 @@
-# Step 1 settings.
+# Mistake while the only possible changes are upgrades.
 migrate:
   enabled: true
   ignore:
+    files: ["upstream.yaml"]
     actions: ["chainguard-actions/actions-setup-node"]
   upgrade:
     enabled: true
+    cooldown:
+      semver-major-days: 3
