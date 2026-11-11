@@ -1,9 +1,10 @@
-# Mistake step: default-days: 0.5
+# Step 9: a mistake while the only possible changes are upgrades.
 migrate:
   enabled: true
   ignore:
+    files: ["upstream.yaml"]
     actions: ["chainguard-actions/actions-setup-node"]
   upgrade:
     enabled: true
     cooldown:
-      default-days: 0.5
+      semver-major-days: 3
