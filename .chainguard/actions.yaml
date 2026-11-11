@@ -1,2 +1,3 @@
+# Scenario A: baseline, upgrades not opted in.
 migrate:
   enabled: true
