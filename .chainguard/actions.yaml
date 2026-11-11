@@ -1,10 +1,7 @@
-# Retest after mono#83413: an ignore rule now skips every remaining change.
+# Step 1 settings.
 migrate:
   enabled: true
   ignore:
-    files: ["upstream.yaml"]
     actions: ["chainguard-actions/actions-setup-node"]
   upgrade:
     enabled: true
-    ignore:
-      - dependency-name: "*"
